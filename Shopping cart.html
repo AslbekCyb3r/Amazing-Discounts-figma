@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figma10</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header1 -->
+    <div class="header1container responsiv">
+        <div class="headerlogo responsiv">
+            <img src="./img/plant.png" width="36px" height="36px">
+        </div>
+        <!-- headeryozuv -->
+        <div class="headeryozuvlar responsiv">
+            <div class="yozuvlarr responsiv">
+                <a href="./Main Page.html">Main Page</a>
+                <a href="./Categories.html">Categories</a>
+                <a href="./All products.html">All products</a>
+                <a href="./All sales.html">All sales</a>
+                <a href="./Shopping cart.html">Shopping cart</a>
+                <a href="./404.html">404</a>
+            </div>
+            <div>
+                <img src="./img/icon (1).png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- yozuv -->
+    <div class="shopingota">
+        <div class="textlar2 responsiv">
+            <h1 class="header3text3">Shopping cart</h1>
+            <div class="chiziq responsiv">
+                <div class="chizqq"></div>
+                <button class="textbutton2">Back to the store</button>
+
+            </div>
+        </div>
+
+        <div class="shopingcardd responsiv">
+            <div class="shopingleft">
+                <div class="qaychii responsiv">
+                    <img src="./img/leftqaychi.png" alt="">
+                    <div class="rigtyozuv responsiv">
+                        <h3>Secateurs</h3>
+                        <p>X</p>
+                        <div class="kopaytirish responsiv">
+                            <div class="counter">
+                                <button onclick="decrement(1)">-</button>
+                                <span id="counterValue1">1</span>
+                                <button onclick="increment(1)">+</button>
+                            </div>
+                            <div class="pul3 responsiv">
+                                <h2>$155</h2>
+                                <p>$240</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="qaychii responsiv">
+                    <img src="./img/nasoz.png" alt="">
+                    <div class="rigtyozuv responsiv">
+                        <h3>Collection for berries (plastic)</h3>
+                        <p>X</p>
+                        <div class="kopaytirish responsiv">
+                            <div class="counter">
+                                <button onclick="decrement(2)">-</button>
+                                <span id="counterValue2">1</span>
+                                <button onclick="increment(2)">+</button>
+                            </div>
+                            <div class="pul3 responsiv">
+                                <h2>$26</h2>
+                                <p>$35</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="qaychii responsiv">
+                    <img src="./img/bell.png" alt="">
+                    <div class="rigtyozuv responsiv">
+                        <h3>Bayonet shovel</h3>
+                        <p>X</p>
+                        <div class="kopaytirish responsiv">
+                            <div class="counter">
+                                <button onclick="decrement(3)">-</button>
+                                <span id="counterValue3">2</span>
+                                <button onclick="increment(3)">+</button>
+                            </div>
+                            <div class="pul3 responsiv">
+                                <h2>$360</h2>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    let counters = {1: 1, 2: 1, 3: 2};  // har bir blok uchun alohida counter
+                
+                    function increment(block) {
+                        counters[block]++;
+                        document.getElementById(`counterValue${block}`).innerText = counters[block];
+                    }
+                
+                    function decrement(block) {
+                        if (counters[block] > 1) {
+                            counters[block]--;
+                            document.getElementById(`counterValue${block}`).innerText = counters[block];
+                        }
+                    }
+                </script>
+                
+                
+
+            </div>
+             <div class="lefttext">
+                <div class="leftttext">
+                    <h3 class="textt_1">Order details</h3>
+                    <p class="textt_2">4 items</p>
+                    <div class="pastkinarx responsiv">
+                        <h2 class="textt_3">Total</h2>
+                        <h2 class="textt_4">$541,00</h2>
+                    </div>
+
+                </div>
+                <div class="inputuchun2">
+                    <div class="inputlarr2">
+                        <input type="text" name="text" id="text1" placeholder="Name">
+                        <input type="number" name="text" id="text1" placeholder="Phone number">
+                        <input type="email" name="text" id="text1" placeholder="Email">
+                    </div>
+                    
+                    <button class="inputbatn2">Get a discount</button>
+    
+    
+                </div>
+
+             </div>
+            
+
+        </div>
+        
+    </div>
+    <div class="header6">
+        <div>
+            <h2 class="header6texct">Contact</h2>
+        </div>
+        <div class="bolacontainer responsiv">
+            <div>
+                <div class="cardorqa">
+                    <div class="cardtextt">
+                        <h5 class="photee">Phone</h5>
+                        <h2 class="nomerr">+7 (499) 350-66-04</h2>
+                    </div>
+                    <div class="cardorqa">
+                        <div class="cardtextt">
+                            <h5 class="photee">Address</h5>
+                            <h2 class="nomerrr">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_2">
+                <div class="cardorqa">
+                    <div class="cardtextt">
+                        <h5 class="photee">Socials</h5>
+                        <div>
+                            <img src="./img/ic-instagram.png" alt="">
+                            <img src="./img/ic-whatsapp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cardorqa">
+                        <div class="cardtextt">
+                            <h5 class="photeee">Working Hours</h5>
+                            <h2 class="nomerr">24 hours a day</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.8956740763406!2d64.42846967650844!3d39.8093318923829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f5009003f1c477b%3A0x920d498788a13e58!2sBuxoro%20psixologiya%20va%20xorijiy%20tillar%20instituti!5e0!3m2!1sru!2s!4v1733133442350!5m2!1sru!2s"
+                    width="1439" height="450" style="border:0; margin-top: 200px; ;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
